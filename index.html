@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Bus-Ticket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -51,7 +52,7 @@
                     <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with P Paribahan</h1>
                     <h3 class="text-green-400 text-3xl font-bold">P Paribahan</h3>
                     <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
-                    <button class="btn text-black hover:text-white text-xl bg-green-400 px-5 btn-ghost">Buy Tickets</button>
+                    <button class="btn text-black hover:text-white text-xl bg-green-400 px-5 btn-ghost"><a href="#go-to-tikit">Buy Tickets</a></button>
                   </div>
                 </div>
               </div>
@@ -152,8 +153,9 @@
                 </div>
               </div>
               <!-- greenline poribohon -->
-              <div class="hero bg-[#F7F8F8] ">
-                <div class="hero-content flex-col lg:flex-row">
+              <div id="go-to-tikit"></div>
+              <div class="hero p-3 bg-[#F7F8F8] ">
+                <div class="hero-content  flex-col lg:flex-row">
                   
                   <div class="card w-full  shadow-2xl bg-base-100">
                     <form class="card-body flex lg:flex-row justify-center items-center">
@@ -220,7 +222,7 @@
                       </div>
                       <!-- divider img -->
                        <div>
-                         <img class="hidden md:block lg:block xl:block 2xl:block" src="./img/info-devider.png" alt="">
+                         <img class=" hidden md:block lg:block xl:block 2xl:block" src="./img/info-devider.png" alt="">
                        </div>
                        <div class="lg:px-10 justify-center items-center">
                         <div>
@@ -231,6 +233,135 @@
                        </div>
                     </form>
                     
+                  </div>
+                </div>
+              </div>
+              <!-- Select Your Seat -->
+              <div class="lg:mx-20 mx-auto ">
+                <div class="hero min-h-screen bg-base-200">
+                  <div class="hero-content justify-between flex lg:gap-24 flex-col lg:flex-row">
+                    <div class="">
+                      <h1 class="text-2xl my-1 lg:my-9 font-bold">Select Your Seat</h1>
+                      <div class="">
+                        <div class="navbar justify-between lg:gap-28 bg-base-100">
+                          <div class="flex-1">
+                            <img src="./img/./seat-gray.png" alt="">
+                            <p class="inter-font">Available</p>
+                          </div>
+                          <div class="flex-none">
+                            <img src="./img/seat-green-filled.png" alt="">
+                            <p>Selected</p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="justify-end my-1 items-end flex text-5xl ">
+                      <i class="fa-solid fa-dharmachakra"></i>
+                      </div>
+                      <!-- shit -->
+                      <div class="mx-auto  lg:mt-20">
+                        <table class="w-full">
+                          <!-- head -->
+                          <tbody>
+                            <!-- row 1 -->
+                            <tr>
+                              <th>A</th>
+                              <td><button class="btn lg:px-10">A1</button></td>
+                              <td><button class="btn lg:px-10">A1</button></td>
+                              <td><button class="btn lg:px-10">A2</button></td>
+                              <td><button class="btn lg:px-10">A4</button></td>
+                            </tr>
+                            <!-- row 2 -->
+                            <tr class="">
+                              <th>B</th>
+                              <td><Button class="btn lg:px-10">B1</Button></td>
+                              <td><Button class="btn lg:px-10">B2</Button></td>
+                              <td><Button class="btn lg:px-10">B3</Button></td>
+                              <td><Button class="btn lg:px-10">B4</Button></td>
+                            </tr>
+                            <!-- row 3 -->
+                            <tr>
+                              <th>C</th>
+                              <td><button class="btn lg:px-10">C1</button></td>
+                              <td><button class="btn lg:px-10">C2</button></td>
+                              <td><button class="btn lg:px-10">C3</button></td>
+                              <td><button class="btn lg:px-10">C4</button></td>
+                              
+                            </tr>
+                            <tr>
+                              <th>D</th>
+                              <td><button class="btn lg:px-10">D1</button></td>
+                              <td><button class="btn lg:px-10">D2</button></td>
+                              <td><button class="btn lg:px-10">D3</button></td>
+                              <td><button class="btn lg:px-10">D4</button></td>
+                              
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                    </div>
+                    <div>
+                      <img class=" hidden md:block lg:block xl:block 2xl:block" src="./img/info-devider.png" alt="">
+                    </div>
+                    
+                    <div class=" w-full justify-between max-w-sm shadow-2xl bg-base-100">
+                      <div><h1 class="text-2xl my-1 font-bold">Select Your Seat</h1></div>
+                      <div>
+                        <div>
+                          <div class="overflow-x-auto w-full">
+                            <table class="table">
+                              <!-- head -->
+                              <thead>
+                                <tr>
+                                  <th>Seat <span>0</span></th>
+                                  <th>Class</th>
+                                  <th>Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- row 1 -->
+                                <tr>
+                                  <td>c1</td>
+                                  <td>Economoy</td>
+                                  <td><span>550</span></td>
+                                </tr>
+                                
+                                <!-- row 2-->
+                                <tr>
+                                  <td>C1</td>
+                                  <td>Economoy</td>
+                                  <td><span>550</span></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <form class="p-1 w-full">
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Passenger Name</span>
+                          </label>
+                          <input type="text" placeholder="Enter your Name" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Phone Number</span>
+                          </label> 
+                          <input type="number" placeholder="Enter your Number" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Email Id</span>
+                          </label>
+                          <input type="email" placeholder="Enter your email id" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-6">
+                          <button class="btn bg-[#1DD100]">Next</button>
+                        </div>
+                       </form>
+                      </div>
                   </div>
                 </div>
               </div>
