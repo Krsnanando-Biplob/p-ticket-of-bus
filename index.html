@@ -259,27 +259,27 @@
                       </div>
                       <!-- shit -->
                       
-                       <div id="hi" class="grid grid-cols-4 gap-4">
-                        <button class="btn shadow-lg" onclick="appendToDisplay('A1')">A1</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('A2')">A2</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('A3')">A3</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('A4')">A4</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('B1')">B1</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('B2')">B2</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('B3')">B3</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('B4')">B4</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('C1')">C1</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('C2')">C2</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('C3')">C3</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('C4')">C4</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('D1')">D1</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('D2')">D2</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('D3')">D3</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('D4')">D4</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('E1')">E1</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('E2')">E2</button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('E3')">E3 </button>
-                        <button class="btn shadow-lg" onclick="appendToDisplay('E4')">E4</button>
+                      <div id="hi" class="grid  grid-cols-4 gap-4">
+                        <button class="btn goTo shadow-lg"><h1>A1</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>A2</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>A3</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>A4</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>B1</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>B2</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>B3</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>B4</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>C1</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>C2</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>C3</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>C4</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>D1</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>D2</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>D3</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>D4</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>E1</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>E2</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>E3</h1><span class="hidden">550</span></button>
+                        <button class="btn goTo shadow-lg"><h1>E4</h1><span class="hidden">550</span></button>
                       </div>
                       
                     </div>
@@ -300,18 +300,22 @@
                       
                       <div id="totalPrice" class="flex- flex-col">
                         <h2 class="text-xl font-semibold">Price</h2>
-                        <span id="priceUpdate">00</span>
+                        <div id="priceUpdate"></div>
                       </div>
                       
                     </div>
                     <hr class="h-1 bg-green-400 w-full mt-10">
                     <div class="flex flex-row justify-between">
                       <h2 class="text-xl font-bold">Total Price</h2>
-                      <h2 class="text-xl font-bold">BDT <span>00</span></h2>
+                      <h2 class="text-xl font-bold">BDT <span id="hiHlwprice">00</span></h2>
                     </div>
-                    <div class="flex justify-between mt-4">
-                      <p></p>
-                      <button class=" btn btn-ghost bg-green-300 " onclick="calculatePrice()">Calculate Price</button>
+                    <div class="flex flex-row justify-between">
+                      <h1 class="text-xl font-bold">Discount </h1>
+                      <span id="disCount">00</span>
+                    </div>
+                    <div class="flex justify-between gap-2 mt-4">
+                      <input id="inPutfilD" type="text" placeholder="enter your 20% discount " class="w-full input">              
+                      <button id="Apllaydiscount" class=" btn btn-ghost bg-green-300">Calculate Price</button>
                     </div>
                     <!-- pesenjar ditiles -->
                     <div class="form-control">
@@ -390,7 +394,7 @@
         </div>
       </section>
     </footer>
-
+<script src="./dom.js"></script>
 <script src="./chack.js"></script>
 </body>
 
