@@ -337,7 +337,7 @@
                       <input type="email" placeholder="enter your email" class="input input-bordered" required />
                     </div>
                     <div class="form-control mt-6">
-                      <button onclick="showElement()" class="btn bg-green-400">Next</button>
+                      <button onclick="my_modal_5.showModal()" class="btn bg-green-400">Next</button>
                     </div>
                     <div class="flex justify-around gap-2">
                       <a class="link link-primary">Terms and Conditions</a>
@@ -346,22 +346,34 @@
                    </div>
               </div>
         </section>
-        <section id="success-section" class="hidden">
-          <div class="hero min-h-screen ">
-            <div class="hero-content bg-base-300 rounded-md  text-center">
-              
-              <div class="max-w-md my-9 justify-center ">
-                <div>
-                  <img class=" mx-auto mb-8" src="./img/success.png" alt="">
+        <section >
+          <!-- showElement() -->
+          <!-- id="success-section" class="hidden" -->
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box">
+                <div class=" ">
+                  <div class="hero-content bg-base-300 rounded-md  text-center">
+                    
+                    <div class="max-w-md my-1 justify-center ">
+                      <div>
+                        <img class=" mx-auto mb-8" src="./img/success.png" alt="">
+                      </div>
+                      <h1 class="text-5xl raleway-font font-bold">SUCCESS</h1>
+                      <h4 class="raleway-font font-bold">Thank you for Booking Our Bus Seats. </h4>
+                      <h4 class="raleway-font font-bold">We are working hard to find the best service and deals for you. </h4>
+                      <p class="inter-font">Shortly you will find a confirmation in your email.</p>
+                      <form method="dialog">
+                        <button onclick="" class="btn px-20 mt-5 rounded-full btn-ghost bg-green-400">Continue</button>
+                      </form>
+                      <!-- backHome() -->
+                    </div>
+                  </div>
                 </div>
-                <h1 class="text-5xl raleway-font font-bold">SUCCESS</h1>
-                <h4 class="raleway-font font-bold">Thank you for Booking Our Bus Seats. </h4>
-                <h4 class="raleway-font font-bold">We are working hard to find the best service and deals for you. </h4>
-                <p class="inter-font">Shortly you will find a confirmation in your email.</p>
-                <button onclick="backHome()" class="btn px-20 mt-5 rounded-full btn-ghost bg-green-400">Continue</button>
               </div>
-            </div>
-          </div>
+            </dialog>
+        </section>
+        <section >
+          
         </section>
     </main>
     <footer class="bg-neutral">
